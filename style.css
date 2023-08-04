@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  background-image: url(../img/sky.jpg);
+}
+.container {
+  display: flex;
+  margin: 40px;
+  width: 900px;
+}
+.categories,
+.products,
+.details {
+  display: block;
+  width: 270px;
+  min-height: 100px;
+  border: 2px solid darkblue;
+}
+
+div {
+  display: block;
+  width: 245px;
+  min-height: 30px;
+
+  margin: 10px;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 5px;
+  background-color: blanchedalmond;
+}
+.btn {
+  margin-top: 70px;
+  margin-left: 10px;
+  width: 130px;
+  height: 50px;
+  background-color: darkblue;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 10px;
+  text-align: center;
+}
+button:hover {
+  color: darkturquoise;
+}
+#mainForm {
+  margin-left: 50px;
+  padding: 5px 30px 5px;
+  width: 300px;
+  min-height: 400px;
+  border: 2px solid darkblue;
+  display: none;
+  font-size: 16px;
+  line-height: 10px;
+  position: absolute;
+  top: 0;
+  left: 80px;
+  justify-content: center;
+  align-items: center;
+  background-color: darkcyan;
+  display: none;
+}
+.subm,
+.button {
+  width: 100px;
+  height: 30px;
+  background-color: dodgerblue;
+  color: blanchedalmond;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 40px;
+}
+#result {
+  width: 300px;
+  min-height: 100px;
+  margin-left: 500px;
+  border-radius: 10px;
+  display: none;
+  padding: 5px 0 20px;
+}
+#output {
+  color: darkblue;
+}

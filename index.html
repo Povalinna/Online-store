@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="categories"></div>
+        <div class="products"></div>
+        <div class="details"></div>
+    </div>
+
+    <form name="mainForm" action="" id="mainForm" onsubmit="console.log('submit');return false;">
+        <p> Введіть фамілію,ім'я та по батькові</p>
+        <p><input type="text" name="name" id="name" value="" />*</p>
+
+        <p>Вибиріть своє місто</p>
+        <select id="city" name="city">
+            <option value=''>Виберіть місто</option>
+            <option value="Одеса">Одеса</option>
+            <option value="Харків">Харків</option>
+            <option value="Львів">Львів</option>
+            <option value="Київ">Київ</option>
+            <option value="Миколаїв">Миколаїв</option>
+
+        </select>
+        <p> Вибиріть склад "Нової пошти </p>
+        <select id="stock" name="stock">
+            <option value=''>Виберіть склад </option>
+            <option value="склад 1">склад 1</option>
+            <option value="склад 2">склад 2</option>
+            <option value="склад 3">склад 3</option>
+            <option value="склад 4">склад 4</option>
+            <option value="склад 5">склад 5</option>
+
+        </select>
+        <p> Вибиріть спосіб оплати</p>
+        <p><input type="radio" name="pay" id="pay" value="при врученні" />Оплата при врученні товару</p>
+        <p><input type="radio" name="pay" id="pay" value="на банківську картку" />Оплата банківською картою</p>
+
+        <p> Скільки одиниць товару хочете купити </p>
+        <p><input type="text" name="number" id="num" value="" required /></p>
+
+        <p>Коментар дo замовлення </p>
+        <p><textarea name="com" id="com" value="text"></textarea></p>
+
+        <button class="button" id="button" type="button" value="відправити">відправити</button>
+        </p>
+
+
+    </form>
+
+    <div id="result"><br><span id="output"></span></div>
+
+
+
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
